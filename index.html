@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>3d - Model</title>
+  </head>
+  <body>
+
+    <div id="header_container">
+      <h1>Feuerfest Instandhaltungsmeister</h1> 
+    </div>
+
+
+    
+    <div id="canvas_container">
+      <canvas id="three-canvas"></canvas>
+    </div>
+
+      <form name="formA">
+        <legend>What</legend>
+          <input type="radio" name="myradio" value='01.ifc' checked/>Sommer 2018
+          <input type="radio" name="myradio" value='Projekt8.ifc'/>Sommer 2020
+          <input type="radio" name="myradio" value='02.ifc'/>Sommer 2022
+      </form>
+      
+
+      <div class="checkboxes">
+        <div>
+            <input checked="true" id="IFCWALLSTANDARDCASE" type="checkbox">
+            Walls
+        </div>
+        <div>
+            <input checked="true" id="IFCSLAB" type="checkbox">
+            Slabs
+        </div>
+        <div>
+            <input checked="true" id="IFCWINDOW" type="checkbox">
+            Windows
+        </div>
+        <div>
+            <input checked="true" id="IFCFURNISHINGELEMENT" type="checkbox">
+            Furniture
+        </div>
+        <div>
+            <input checked="true" id="IFCDOOR" type="checkbox">
+            Doors
+        </div>
+        <div>
+            <input checked="true" id="IFCMEMBER" type="checkbox">
+            Curtain wall structure
+        </div>
+        <div>
+            <input checked="true" id="IFCPLATE" type="checkbox">
+            Curtain wall plates
+        </div>
+      </div>
+    
+
+      <button id="built">built</button>
+      <button id="delete">delete</button>
+      
+  
+
+
+
+    <script src="bundle.js"></script>
+
+	 
+  </body>
+</html>
